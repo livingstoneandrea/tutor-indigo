@@ -27,10 +27,10 @@ ABOUT = load_about()
 setup(
     name="tutor-indigo",
     version=ABOUT["__version__"],
-    url="https://github.com/overhangio/tutor-indigo",
+    url="https://github.com/livingstoneandrea/tutor-indigo.git",
     project_urls={
         "Documentation": "https://docs.tutor.edly.io/",
-        "Code": "https://github.com/overhangio/tutor-indigo",
+        "Code": "https://github.com/livingstoneandrea/tutor-indigo.git",
         "Issue tracker": "https://github.com/overhangio/tutor-indigo/issues",
         "Community": "https://discuss.openedx.org",
     },

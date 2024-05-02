@@ -1,0 +1,61 @@
+// Make the primary color match ICS
+
+$primary: #6e1d2b; 
+$primary-light: #f09eab; 
+
+.bg-primary-400 {
+    background: none !important;
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: block;
+    .min-vh-100 {
+        min-height: calc(100vh - 100px) !important;
+        display: flex !important;
+        @media screen and (max-width: 1200px) {
+            min-height: 20px !important;
+            display: block !important;
+        }
+    }
+    h1 {
+        margin: 0 auto !important;
+        max-width: 564px !important;
+        font-size: 32px;
+        line-height: 40px;
+        color: $primary !important;
+        padding: 50px 0;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        font-weight: 400;
+        @include media-breakpoint-up(sm) {
+            font-size: 52px;
+            line-height: 78px;
+        }
+        @media screen and (max-width: 1200px) {
+            padding: 0;
+        }
+        .text-accent-a {
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 40px;
+            color: $primary !important;
+            display: block !important;
+            font-weight: 900;
+            @include media-breakpoint-up(sm) {
+                font-size: 64px;
+                line-height: 74px;
+            }
+        }
+    }
+}
+
+#root .layout .bg-primary-400 h1 .text-accent-a {
+    color: $primary !important;
+}
+
+#root .layout .content #main-content .btn-brand {
+    background-color: #6e1d2b !important;
+    border-color: #6e1d2b !important;
+}
+
+
