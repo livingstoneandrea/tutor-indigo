@@ -133,5 +133,12 @@ RUN npm install '@edx/brand@npm:@edly-io/indigo-brand-openedx@^1.0.0'
 RUN npm install '@edx/frontend-component-footer@npm:@edly-io/indigo-frontend-component-footer@^1.0.0'
 """,
         ),
+        
+        (
+            "mfe-dockerfile-post-npm-install",
+            """
+RUN npm install '@edx/brand@git+https://github.com/livingstoneandrea/brand-openedx.git#livin'
+""",
+        )
     ]
 )
